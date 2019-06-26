@@ -1,0 +1,44 @@
+h1 {
+    font-family: inherit;
+    font-size: 10rem;
+    font-weight: 100;
+    color: rgba(175, 47, 47, 0.15);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.new-todo {
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: rgb(77, 77, 77);
+}
+
+footer {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(119,119,119);
+}
+
+.todo-list {
+    label,
+    .edit {
+        color: rgb(77, 77, 77);
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+/*
+New todo: box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+main: border-top: 1px solid #e6e6e6;
+.todo: border-bottom: 1px solid #ededed;
+footer: border-top: 1px solid #e6e6e6;
+
+
+*/

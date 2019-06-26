@@ -1,0 +1,28 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    li {
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            padding: 3px 7px;
+
+            &.selected {
+                border-color: rgba(175, 47, 47, 0.2);
+            }
+
+            &:hover {
+                border-color: rgba(175, 47, 47, 0.1);
+            }
+        }
+    }
+}

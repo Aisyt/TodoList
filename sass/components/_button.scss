@@ -1,0 +1,44 @@
+.clear-completed {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.destroy {
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    transition: color 0.2s ease-out;
+
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    font-size: 3rem;
+    font-weight: 400;
+
+    &::after {
+        content: '×';
+    }
+
+    &:hover {
+        color: #af5b5e;
+    }
+}

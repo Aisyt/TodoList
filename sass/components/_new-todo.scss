@@ -1,0 +1,14 @@
+.new-todo {
+    width: 100%;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    padding: 16px 0;
+    color: rgb(77, 77, 77);
+    line-height:  1.4;
+    // letter-spacing: 1px;
+
+    &::placeholder {
+        color: rgba(77, 77, 77, 0.15);
+        font-style: italic;
+    }
+}
