@@ -232,6 +232,7 @@ var todoApp = (function () {
                 cur.style.display = "flex";
             });
     
+            // Silmek için .outerHTML = '' de kullanılabilir. Daha hızlıymış.
             if(editElement) editElement.remove();
 
         } else if (event.keyCode === 13 && event.target.className === "edit") {
@@ -263,7 +264,12 @@ var todoApp = (function () {
         }
     };
 })();
+
+
+
 var t0 = performance.now();
 todoApp.init();
 var t1 = performance.now();
-console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
+// console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
+document.getElementById("performance").textContent =  `Page load time: ${(t1 - t0)} milliseconds.`;
+
